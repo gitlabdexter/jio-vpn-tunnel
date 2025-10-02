@@ -8,7 +8,7 @@ const cover_page = (props) => {
     </div>
     
     <div className="container">
-            <img src={props.image} alt="STARLINK VPN Logo"/>
+            <img src={props.image} alt="https://i.ibb.co/jPnXFqj5/icon-icon.png"/>
             <div className="title">{props.siteName}</div>
             <div className="subtitle">{props.description}</div>
             <div className='displayStack__2'>
