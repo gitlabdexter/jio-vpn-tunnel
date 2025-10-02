@@ -7,6 +7,7 @@ import FooterDetails from './components/footer_details';
 export default function App() {
   return (
     <>
+      {/* Render cover page(s) */}
       {siteOptions.map(option => (
         <CoverPage 
           key={option.id}
@@ -17,23 +18,26 @@ export default function App() {
         />
       ))}
 
+      {/* Render product list */}
       <div className='AppContainer'>
-        {contents.map(content => (
+        {contents.map(item => (
           <Products 
-            key={content.id}
-            image={content.image}
-            name={content.name}
-            description={content.description}
-            appLink={content.appLink}
-            timeLeft={content.timeLeft}
-            downloads={content.downloads}
-            rating={content.rating}
+            key={item.id}
+            image={item.image}
+            name={item.name}
+            description={item.description}
+            appLink={item.appLink}
+            timeLeft={item.timeLeft}
+            downloads={item.downloads}
+            rating={item.rating}
           />
         ))}
       </div>
 
-      {/* If you want only one footer, show first */}
-      <FooterDetails siteName={siteOptions[0].siteName} />
+      {/* Render footer - use first siteOption only */}
+      {siteOptions.length > 0 && (
+        <FooterDetails siteName={siteOptions[0].siteName} />
+      )}
     </>
   );
 }
