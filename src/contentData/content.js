@@ -7,6 +7,7 @@ const productData = [
       description: ["OVPN", "UDP", "V2RAY", "SSH", "SLOWDNS"],
       rating: 5,
       timeLeft: 24,
+	  downloads: 0,
       appLink: "https://gitlab.com/mtkdev1/dextereskalarte/-/raw/main/app-release.apk" 
        },
     {
@@ -16,7 +17,8 @@ const productData = [
       productType: "openBackHeadphones",
       description: ["OVPN", "UDP", "V2RAY", "SSH", "SLOWDNS"],
       rating: 5,
-     timeLeft: 27,
+      timeLeft: 27,
+	  downloads: 0,
       appLink: "https://gitlab.com/mtkdev1/dextereskalarte/-/raw/main/DIL_SHAD_VPN.apk"
     },
     {
@@ -24,9 +26,10 @@ const productData = [
       name: "JIO SOCIAL VPN",
       image:"https://i.ibb.co/8ymLfzV/jio-social-vpn.jpg",
      productType: "openBackHeadphones",
-      description: ["OVPN", "UDP", "V2RAY"],
+      description: ["OVPN", "UDP", "V2RAY""],
      rating: 5,
       timeLeft: 24,
+	  downloads: 0,
      appLink: "https://gitlab.com/mtkdev1/dextereskalarte/-/raw/main/JIO_SOCIAL_VPN.apk"
 
     },
@@ -39,6 +42,7 @@ const productData = [
        description: ["OVPN", "UDP", "V2RAY"],
        rating: 5,
        timeLeft: 24,
+	   downloads: 0,
        appLink: "https://gitlab.com/mtkdev1/dextereskalarte/-/raw/main/DU_CARD_VPN.apk"
 	          },
     {
@@ -46,9 +50,10 @@ const productData = [
       name: "ANSARI VPN",
       image:"https://i.ibb.co/nq4PfRTF/a.jpg",
       productType: "openBackHeadphones",
-      description: ["OVPN", "UDP", "V2RAY"],
+      description: ["OVPN", "UDP", "V2RAY""],
       rating: 5,
      timeLeft: 27,
+	 downloads: 0,
       appLink: "https://gitlab.com/mtkdev1/dextereskalarte/-/raw/main/ANSARI_VPN_1.2_APKPure.xapk"
    
      }
