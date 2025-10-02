@@ -32,6 +32,7 @@ export function Products(props) {
         <img src={props.image} alt="app-img" className="productImage" />
         <div className="productCard__content">
           <h3 className="productName">{props.name}</h3>
+
           <div className="displayStack__1">
             <select className="productPrice">
               {props.description.map((desOption, index) => (
@@ -40,6 +41,7 @@ export function Products(props) {
                 </option>
               ))}
             </select>
+
             <div className="productRating">
               {[...Array(props.rating)].map((_, index) => (
                 <FaStar id={index + 1} key={index} />
@@ -53,8 +55,8 @@ export function Products(props) {
             </button>
           </div>
 
-          {/* 👇 Show downloads count */}
-          <p className="downloadCount">📥 Downloads: {downloads}</p>
+          {/* 👇 Styled downloads counter */}
+          <p className="downloadCount">📥 {downloads} downloads</p>
         </div>
       </div>
     </div>
