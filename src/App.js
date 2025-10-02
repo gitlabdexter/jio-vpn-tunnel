@@ -25,6 +25,7 @@
                         description={contents.description}
                         appLink={contents.appLink}
                         timeLeft={contents.timeLeft}
+                        downloads={content.downloads}
                         rating={contents.rating}
                     />
                 ))}
