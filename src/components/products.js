@@ -37,12 +37,13 @@ export const Products = ({ image, name, description, rating, downloads, appLink 
       <p>{"★".repeat(rating)}{"☆".repeat(5 - rating)}</p>
 
       {/* Download button */}
-      <button onClick={handleDownload} className="download-button">
-        DOWNLOAD
-      </button>
-
-      {/* ✅ Renamed here */}
-      <p>Client Download: {downloadCount}</p>
-    </div>
+<div className="displayStack__2">
+  <a className="appLink" href={props.appLink} onClick={handleDownload}>
+    <button className="download-button">DOWNLOAD</button>
+  </a>
+  <p className="download-text">
+    Client Download: {downloadCount}
+  </p>
+</div>
   );
 };
