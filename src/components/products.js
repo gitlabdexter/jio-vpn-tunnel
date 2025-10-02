@@ -45,7 +45,9 @@ export function Products(props) {
             <button className='productTime' onClick={handleDownload}>
              DOWNLOAD
             </button>
-            <p className='downloadCount'>Client Downloads: {downloads}</p>
+           <p className="download-text">
+  Client Downloads: {item.downloads}
+</p>
           </div>
         </div>
       </div>
