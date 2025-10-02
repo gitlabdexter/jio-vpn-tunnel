@@ -16,20 +16,20 @@
                         siteLink={siteOptions.siteLink}
                     />
                 ))}
-            <div className='AppContainer'>
-                {contents.map(contents => (
-                    <Products 
-                        key={contents.id}
-                        image={contents.image}
-                        name={contents.name}
-                        description={contents.description}
-                        appLink={contents.appLink}
-                        timeLeft={contents.timeLeft}
-                        downloads={content.downloads}
-                        rating={contents.rating}
-                    />
-                ))}
-            </div>
+          <div className='AppContainer'>
+  {contents.map(content => (
+    <Products 
+      key={content.id}
+      image={content.image}
+      name={content.name}
+      description={content.description}
+      appLink={content.appLink}
+      timeLeft={content.timeLeft}
+      downloads={content.downloads}
+      rating={content.rating}
+    />
+  ))}
+</div>
 
             <FooterDetails
             key={siteOptions.id}
