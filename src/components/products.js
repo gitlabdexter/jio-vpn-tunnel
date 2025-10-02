@@ -43,11 +43,11 @@ export function Products(props) {
           </div>
           <div className='displayStack__2'>
             <button className='productTime' onClick={handleDownload}>
-             DOWNLOAD
+              DOWNLOAD
             </button>
-           <p className="download-text">
-  Client Downloads: {item.downloads}
-</p>
+            <p className="download-text">
+              Client Downloads: {downloads}
+            </p>
           </div>
         </div>
       </div>
