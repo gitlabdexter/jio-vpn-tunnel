@@ -23,12 +23,12 @@ export default function App() {
         {contents.map(item => (
           <Products 
             key={item.id}
+            id={item.id}                     // ✅ pass id so downloads are tracked
             image={item.image}
             name={item.name}
             description={item.description}
             appLink={item.appLink}
             timeLeft={item.timeLeft}
-            downloads={item.downloads}
             rating={item.rating}
           />
         ))}
