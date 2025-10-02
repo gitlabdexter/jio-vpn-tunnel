@@ -43,9 +43,9 @@ export function Products(props) {
           </div>
           <div className='displayStack__2'>
             <button className='productTime' onClick={handleDownload}>
-             CLIENT DOWNLOAD
+             DOWNLOAD
             </button>
-            <p className='downloadCount'>Downloads: {downloads}</p>
+            <p className='downloadCount'>Client Downloads: {downloads}</p>
           </div>
         </div>
       </div>
