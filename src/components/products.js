@@ -1,47 +1,34 @@
-import { FaStar } from 'react-icons/fa';
-import { useState } from 'react';
+import { useState, useEffect } from "react";
 
-export function Products(props) {
-  const [downloads, setDownloads] = useState(props.downloads || 0);
+export function Products({ image, name, description, rating, appLink, timeLeft, downloads }) {
+  const [downloadCount, setDownloadCount] = useState(downloads);
+
+  // Load saved count from localStorage (so it doesn't reset on refresh)
+  useEffect(() => {
+    const savedCount = localStorage.getItem(name);
+    if (savedCount) {
+      setDownloadCount(parseInt(savedCount, 10));
+    }
+  }, [name]);
+
+  // Save count to localStorage whenever it updates
+  useEffect(() => {
+    localStorage.setItem(name, downloadCount);
+  }, [downloadCount, name]);
 
   const handleDownload = () => {
-    setDownloads(downloads + 1);
-    window.open(props.appLink, '_blank'); // open APK in new tab
+    setDownloadCount(prev => prev + 1);
+    window.open(appLink, "_blank"); // open the download link
   };
 
   return (
-    <div className='productList'>
-      <div className='productCard'>
-        <img src={props.image} alt='app-img' className='productImage' />
-        <div className='productCard__content'>
-          <h3 className='productName'>{props.name}</h3>
-
-          <div className='displayStack__1'>
-            <select className='productPrice'>
-              {props.description.map((desOption, index) => (
-                <option key={index} value={desOption}>
-                  {desOption}
-                </option>
-              ))}
-            </select>
-
-            <div className='productRating'>
-              {[...Array(props.rating)].map((_, index) => (
-                <FaStar id={index + 1} key={index} />
-              ))}
-            </div>
-          </div>
-
-          {/* Downloads counter */}
-          <p className='downloadsCount'>Downloads: {downloads}</p>
-
-          <div className='displayStack__2'>
-            <button className='productTime' onClick={handleDownload}>
-              DOWNLOAD
-            </button>
-          </div>
-        </div>
-      </div>
+    <div className="product-card">
+      <img src={image} alt={name} className="product-image" />
+      <h3>{name}</h3>
+      <p>{description.join(", ")}</p>
+      <p>⭐ {rating}</p>
+      <p>Downloads: {downloadCount}</p>
+      <button onClick={handleDownload}>DOWNLOAD</button>
     </div>
   );
 }
