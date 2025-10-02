@@ -64,6 +64,14 @@ body {
   box-shadow: 0 8px 8px var(--shadow-color);
 }
 
+.download-text {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+
 .navbar .logo {
   font-size: 1.5rem;
   font-weight: bold;
