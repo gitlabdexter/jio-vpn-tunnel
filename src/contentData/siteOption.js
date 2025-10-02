@@ -1,9 +1,9 @@
 const siteOptionData = [
     {
       id: 1,
-      siteName: "BLOODLINE DEV",
+      siteName: "Jio Tunnel Vpn",
       image:
-        "https://i.ibb.co/1RF1Gfq/favicon.png",
+        "https://i.ibb.co/jPnXFqj5/icon-icon.png",
       description: "Experience a secure and reliable VPN service with enhanced privacy and performance.",
       siteLink: "https://sumsag-ultra.site/"
     }
