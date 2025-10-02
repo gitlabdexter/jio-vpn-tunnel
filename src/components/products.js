@@ -2,19 +2,19 @@ import { FaStar } from 'react-icons/fa';
 import { useState } from 'react';
 
 export function Products(props) {
-  // local state for downloads
+  // downloads state (start from props.downloads if provided)
   const [downloads, setDownloads] = useState(props.downloads || 0);
 
   // handle click
   const handleDownload = () => {
     setDownloads(downloads + 1);  // increase counter
-    // Still open the appLink
+    // open APK link
     window.open(props.appLink, '_blank');
   };
 
   return (
     <div className='productList'>
-      <div key={props.id} className='productCard'>
+      <div className='productCard'>
         <img src={props.image} alt='app-img' className='productImage' />
         <div className='productCard__content'>
           <h3 className='productName'>{props.name}</h3>
