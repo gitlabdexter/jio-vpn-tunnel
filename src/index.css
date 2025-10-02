@@ -95,6 +95,15 @@ body {
   z-index: -2; /* Ensure background is below overlay and content */
 }
 
+.downloadCount {
+  font-size: 13px;
+  color: #555;       /* subtle grey */
+  margin-top: 6px;
+  text-align: right; /* aligns nicely under the button */
+  font-style: italic;
+}
+
+
 .container::after {
   content: "";
   position: absolute;
