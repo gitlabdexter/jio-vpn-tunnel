@@ -44,10 +44,30 @@ const productData = [
     name: "ANSARI VPN",
     image: "https://i.ibb.co/nq4PfRTF/a.jpg",
     productType: "openBackHeadphones",
-    description: ["OVPN", "UDP", "V2RAY"],   // ✅ fixed
+    description: ["OVPN", "UDP", "V2RAY"],
     rating: 5,
     timeLeft: 27,
     appLink: "https://gitlab.com/mtkdev1/dextereskalarte/-/raw/main/ANSARI_VPN_1.2_APKPure.xapk"
+     },
+  {
+    id: 6,
+    name: "JIO VPN 5G",
+    image: "https://i.ibb.co/pjY3MP7w/jioo5g.jpg",
+    productType: "openBackHeadphones",
+    description: ["OVPN"],
+    rating: 5,
+    timeLeft: 24,
+    appLink: "https://gitlab.com/mtkdev1/dextereskalarte/-/raw/main/JIO_VPN_5G.apk"
+  },
+  {
+    id: 7,
+    name: "JIO SOCIAL VIP",
+    image: "https://i.ibb.co/s9dXhW1y/jiosocial.jpg",
+    productType: "openBackHeadphones",
+    description: ["OVPN"],
+    rating: 5,
+    timeLeft: 27,
+    appLink: "https://gitlab.com/mtkdev1/dextereskalarte/-/raw/main/JIO_SOCIAL_VIP.apk"
   }
 ];
 
