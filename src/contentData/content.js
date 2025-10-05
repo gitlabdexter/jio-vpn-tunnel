@@ -68,6 +68,26 @@ const productData = [
     rating: 5,
     timeLeft: 27,
     appLink: "https://gitlab.com/mtkdev1/dextereskalarte/-/raw/main/JIO_SOCIAL_VIP.apk"
+        },
+  {
+    id: 8,
+    name: "Baloch Vpn",
+    image: "https://i.ibb.co/XfjqKXp3/balockvpn.jpg",
+    productType: "openBackHeadphones",
+    description: ["OVPN"],
+    rating: 5,
+    timeLeft: 24,
+    appLink: "https://gitlab.com/mtkdev1/dextereskalarte/-/raw/main/Baloch_VPN"
+  },
+  {
+    id: 9,
+    name: "Fast Vpn",
+    image: "https://i.ibb.co/Lzfr42sD/fast-vpn.jpg",
+    productType: "openBackHeadphones",
+    description: ["OVPN"],
+    rating: 5,
+    timeLeft: 27,
+    appLink: "https://gitlab.com/mtkdev1/dextereskalarte/-/raw/main/FAST_VPN.apk"
   }
 ];
 
